@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let b = prompt("Berapa harga belanjaan anda");
+        let d = prompt("Berapa uang yang dibayar");
+        let k = d - b;
+        let seratus =
+            document.write("uang belanjaan anda adalah Rp" + b + "<br>");
+        document.write("uang yang dibayarkan adalah Rp" + d + "<br>");
+        document.write("Kembalian anda adalah Rp" + k + "dengan rincian sebagai berikut: <br>");
+        if (k >= 100000) {
+            let seratus = Math.floor(k / 100000);
+            document.write("uang 100.000 sebanyak" + seratus + "lembar <br>");
+            k = k - (seratus * 100000);
+
+        }
+        if (k >= 50000) {
+            let limap = Math.floor(k / 50000);
+            document.write("uang 50.000 sebanyak" + limap + "lembar <br>");
+            k = k - (limap * 50000);
+
+        }
+
+        if (k >= 20000) {
+            let duap = Math.floor(k / 20000);
+            document.write("uang 20.000 sebanyak" + duap + "lembar <br>");
+            k = k - (duap * 20000);
+        }
+
+        if (k >= 10000) {
+            let sep = Math.floor(k / 10000);
+            document.write("uang 10.000 sebanyak" + sep + "lembar <br>");
+            k = k - (sep * 10000);
+        }
+        if (k >= 5000) {
+            let lima = Math.floor(k / 5000);
+            document.write("uang 5.000 sebanyak" + lima + "lembar <br>");
+            k = k - (lima * 5000);
+        }
+
+        if (k >= 1000) {
+            let ser = Math.floor(k / 1000);
+            document.write("uang 1.000 sebanyak" + ser + "lembar <br>");
+            k = k - (ser * 1000);
+        }
+
+        if (k >= 500) {
+            let ratus = Math.floor(k / 500);
+            document.write("uang 500 sebanyak" + ratus + "lembar <br>");
+            k = k - (ratus * 500);
+        }
+        if ((k > 0) && (a < 500)) {
+            document.write("sisa kembalian Rp." + k);
+
+        }
+    </script>
+</body>
+
+</html>
